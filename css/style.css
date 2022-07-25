@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/bg-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+}
+.logo{
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.logo img {
+    width: 170px;
+}
+.container{
+    display: flex;
+    margin: 0 0 0 70px;
+}
+main img {
+    width: 650px;
+}
+.content {
+    width: 50%;
+    padding: 30px 100px 50px 50px;
+}
+.content h1 {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 20px;
+}
+.content p {
+    font-family: 'Fraunces', serif;
+    padding-bottom: 50px;
+}
+.content a {
+    border-radius: 50px;
+    padding: 10px 50px;
+    width: 100px;
+    text-decoration: none;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 1px 1px 5px black;
+}
+.content a:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+footer {
+    
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+footer .fa-brands {
+    position: sticky;
+    font-size: 10px;
+    margin-right: 10px ;
+    border-radius: 10px;
+    border: 1px solid ;
+    padding: 5px;
+}
+footer .fa-brands:hover{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-image: url(../images/bg-mobile.svg);
+    }
+    .container{
+     flex-direction: column;
+     margin-left: 30px;  
+    }
+    .logo{
+        margin-left: 30px;
+    }
+    main img {
+        width: 90%;
+    }
+    .content {
+        text-align: center;
+        width: 90%;
+        margin-top: 50px;
+        padding: 0;
+    }
+    .content p {
+        padding-bottom: 30px;
+    }
+    footer {
+        width: 50%;
+    }
+}
